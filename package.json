@@ -23,5 +23,5 @@
   },
   "typescript": {
     "definition": "dist/index.d.ts"
-  },
+  }
 }
