@@ -1,6 +1,8 @@
 Stored Components
 ===
 
+[![npm version](https://badge.fury.io/js/stored-component.svg)](https://badge.fury.io/js/stored-component) [![MIT License](https://img.shields.io/packagist/l/doctrine/orm.svg)]()
+
 Keep a Preact component's state elsewhere for when you'll want it later.
 
 ### Installation
