@@ -1,9 +1,9 @@
-import * as React from "react";
+import { Component } from "preact";
 
 /**
  * Abstract class for components that have their state replicated elsewhere.
  */
-export default abstract class StoredComponent<P, S> extends React.Component<P, S> {
+export default abstract class StoredComponent<P, S> extends Component<P, S> {
   private _id: string;
 
   /**

@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = require("react");
+var preact_1 = require("preact");
 /**
  * Abstract class for components that have their state replicated elsewhere.
  */
@@ -43,7 +43,7 @@ var StoredComponent = /** @class */ (function (_super) {
         this.setState(newState);
     };
     return StoredComponent;
-}(React.Component));
+}(preact_1.Component));
 exports.default = StoredComponent;
 /**
  * Data store helper functions.

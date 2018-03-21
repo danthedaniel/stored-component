@@ -1,7 +1,7 @@
 Stored Components
 ===
 
-Keep a React component's state elsewhere for when you'll want it later.
+Keep a Preact component's state elsewhere for when you'll want it later.
 
 ### Installation
 
@@ -13,11 +13,11 @@ npm install -S stored-component
 
 
 #### Basic Usage
-Instead of extending from `React.Component` use `StoredComponent` from the
+Instead of extending from `Component` use `StoredComponent` from the
 package. In addition, pass the default prop values to `super()`.
 
 ```typescript
-import * as React from "react";
+import { h } from "preact";
 import StoredComponent from "stored-component";
 
 class MyComponent extends StoredComponent {
@@ -66,7 +66,7 @@ class MyComponent extends StoredComponent {
 #### Typing
 
 This project supports TypeScript. You can set the state and prop types of your
-`StoredComponent`s just as with React Components:
+`StoredComponent`s just as with Preact Components:
 
 ```typescript
 type StateType = typeof defaultState;
@@ -81,7 +81,7 @@ class MyComponent extends StoredComponent<{}, StateType> {
 }
 ```
 
-### Recalling the Original State
+#### Recalling the Original State
 
 You can reset a component's state to its default with the `defaultState()`
 method on the `StoredComponent` class.

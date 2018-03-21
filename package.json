@@ -1,10 +1,12 @@
 {
   "name": "stored-component",
   "version": "0.1.0",
-  "description": "Keep a React component's state elsewhere for when you'll want it later.",
+  "description": "Keep a Preact component's state elsewhere for when you'll want it later.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "keywords": [
-    "react"
+    "preact"
   ],
   "repository": {
     "type": "git",
@@ -13,14 +15,12 @@
   "author": "teaearlgraycold",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=16"
+    "preact": "^8.2.7"
   },
   "devDependencies": {
-    "@types/react": "^16.0.40",
-    "@types/react-dom": "^16.0.4",
     "typescript": "^2.7.2"
   },
-  "typescript": {
-    "definition": "dist/index.d.ts"
+  "dependencies": {
+    "preact": "^8.2.7"
   }
 }
