@@ -1,0 +1,27 @@
+{
+  "name": "stored-component",
+  "version": "0.1.0",
+  "description": "Keep a React component's state elsewhere for when you'll want it later.",
+  "main": "dist/index.js",
+  "keywords": [
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teaearlgraycold/stored-component.git"
+  },
+  "author": "teaearlgraycold",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "typescript": "^2.7.2"
+  },
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
+}

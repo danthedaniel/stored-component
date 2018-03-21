@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es2015", "dom"],
+    "outDir": "./dist/",
+    "declaration": true,
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
