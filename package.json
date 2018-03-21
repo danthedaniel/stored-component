@@ -8,6 +8,10 @@
   "keywords": [
     "preact"
   ],
+  "bugs": {
+    "url": "https://github.com/teaearlgraycold/stored-component/issues"
+  },
+  "homepage": "https://github.com/teaearlgraycold/stored-component",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/teaearlgraycold/stored-component.git"
@@ -19,8 +23,5 @@
   },
   "devDependencies": {
     "typescript": "^2.7.2"
-  },
-  "dependencies": {
-    "preact": "^8.2.7"
   }
 }

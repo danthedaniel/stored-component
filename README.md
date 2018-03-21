@@ -96,9 +96,9 @@ import { storage } from "stored-component";
 storage.setStore(window.localStorage);
 ```
 
-Take note that if you use localStorage you will need to be aware of state model
-changes. If your application is updated with different a new state structure,
-the old state still sitting in localStorage will be loaded up anyway.
+Take note that if you use `localStorage` you will need to be aware of state
+model changes. If your application is updated with a new state structure, the
+old state still sitting in `localStorage` will be loaded up anyway.
 
 ### Serialization
 
