@@ -99,3 +99,40 @@ storage.setStore(window.localStorage);
 Take note that if you use localStorage you will need to be aware of state model
 changes. If your application is updated with different a new state structure,
 the old state still sitting in localStorage will be loaded up anyway.
+
+### Serialization
+
+Because `localStorage` and `sessionStorage` can only store strings, the
+component states are serialized as JSON. This means that values in the state
+that can not be serialized as JSON are filtered out.
+
+When recalling a filtered value from the data store, the default value (as
+defined when calling `super()`) is used.
+
+For example - if you try to serialize this state:
+
+```javascript
+const default = {foo: "", baz: -1, data: null};
+let state = {
+  foo: "bar",
+  baz: 0,
+  data: new Promise(...)
+};
+```
+The following JSON will be stored:
+
+```json
+{"foo": "bar", "baz": 0}
+```
+
+And the following object will be recalled from the store:
+
+```javascript
+let state = {
+  foo: "bar",
+  baz: 0,
+  data: null
+}
+```
+
+In addition, all Arrays have non-serializable values filtered out.
