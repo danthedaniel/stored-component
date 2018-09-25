@@ -71,8 +71,8 @@ This project supports TypeScript. You can set the state and prop types of your
 `StoredComponent`s just as with Preact Components:
 
 ```typescript
-type StateType = typeof defaultState;
 const defaultState = {foo: "bar", enabled: false};
+type StateType = typeof defaultState;
 
 class MyComponent extends StoredComponent<{}, StateType> {
   constructor(props) {
